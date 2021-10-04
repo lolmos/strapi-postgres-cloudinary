@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/transportation-departures",
+      "handler": "transportation-departure.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transportation-departures/count",
+      "handler": "transportation-departure.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transportation-departures/:id",
+      "handler": "transportation-departure.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transportation-departures",
+      "handler": "transportation-departure.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transportation-departures/:id",
+      "handler": "transportation-departure.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/transportation-departures/:id",
+      "handler": "transportation-departure.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

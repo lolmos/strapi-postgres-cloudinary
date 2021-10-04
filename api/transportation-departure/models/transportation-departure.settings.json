@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transportation_departures",
+  "info": {
+    "name": "Transportation Departure"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "slug": {
+      "type": "uid"
+    },
+    "departureTime": {
+      "type": "time",
+      "required": true
+    },
+    "arrival": {
+      "type": "time"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
+    "update": {
+      "type": "richtext"
+    },
+    "transportation_company": {
+      "model": "transportation-company"
+    }
+  }
+}

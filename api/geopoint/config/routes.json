@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/geopoints",
+      "handler": "geopoint.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/geopoints/count",
+      "handler": "geopoint.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/geopoints/:id",
+      "handler": "geopoint.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/geopoints",
+      "handler": "geopoint.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/geopoints/:id",
+      "handler": "geopoint.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/geopoints/:id",
+      "handler": "geopoint.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
