@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/transportation-companies",
+      "handler": "transportation-company.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transportation-companies/count",
+      "handler": "transportation-company.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transportation-companies/:id",
+      "handler": "transportation-company.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transportation-companies",
+      "handler": "transportation-company.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transportation-companies/:id",
+      "handler": "transportation-company.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/transportation-companies/:id",
+      "handler": "transportation-company.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

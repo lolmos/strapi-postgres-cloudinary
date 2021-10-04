@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transportation_companies",
+  "info": {
+    "name": "Transportation Company",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "ferry",
+        "transfer",
+        "bus",
+        "taxi"
+      ]
+    },
+    "contactinfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "contact.contact-info"
+    }
+  }
+}
