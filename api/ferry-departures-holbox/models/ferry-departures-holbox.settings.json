@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "ferry_departures_holboxes",
+  "info": {
+    "name": "ferry-departures-holbox"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "departure": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ferry-departure-block.departure"
+    }
+  }
+}

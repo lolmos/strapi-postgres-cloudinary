@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_location_geo_points",
+  "info": {
+    "name": "geoPoint",
+    "icon": "haykal"
+  },
+  "options": {},
+  "attributes": {
+    "longitude": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    }
+  }
+}

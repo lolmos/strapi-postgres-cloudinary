@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_contact_social_medias",
+  "info": {
+    "name": "social media",
+    "icon": "comments"
+  },
+  "options": {},
+  "attributes": {
+    "facebookUrl": {
+      "type": "string"
+    },
+    "twitterUrl": {
+      "type": "string"
+    },
+    "instagramaccount": {
+      "type": "string"
+    }
+  }
+}

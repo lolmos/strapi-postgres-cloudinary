@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_ferry_departure_block_departures",
+  "info": {
+    "name": "departure",
+    "icon": "ship"
+  },
+  "options": {},
+  "attributes": {
+    "departureTime": {
+      "type": "time"
+    },
+    "transportation_company": {
+      "model": "transportation-company"
+    },
+    "origin": {
+      "type": "enumeration",
+      "enum": [
+        "Holbox",
+        "Chiquia"
+      ]
+    }
+  }
+}

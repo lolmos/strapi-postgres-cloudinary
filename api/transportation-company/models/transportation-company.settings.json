@@ -26,10 +26,20 @@
         "taxi"
       ]
     },
-    "contactinfo": {
+    "phoneNumber": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact.phone-number"
+    },
+    "socialmedia": {
       "type": "component",
       "repeatable": false,
-      "component": "contact.contact-info"
+      "component": "contact.social-media"
+    },
+    "companyLocation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "location.location"
     }
   }
 }

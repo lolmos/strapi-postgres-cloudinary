@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/holbox-chiquila-departures",
+      "handler": "holbox-chiquila-departures.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/holbox-chiquila-departures/count",
+      "handler": "holbox-chiquila-departures.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/holbox-chiquila-departures/:id",
+      "handler": "holbox-chiquila-departures.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/holbox-chiquila-departures",
+      "handler": "holbox-chiquila-departures.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/holbox-chiquila-departures/:id",
+      "handler": "holbox-chiquila-departures.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/holbox-chiquila-departures/:id",
+      "handler": "holbox-chiquila-departures.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

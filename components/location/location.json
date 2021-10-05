@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_location_locations",
+  "info": {
+    "name": "location",
+    "icon": "map-marker-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "addressLine1": {
+      "type": "string"
+    },
+    "addressLine2": {
+      "type": "string"
+    },
+    "stateRegion": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "string"
+    },
+    "postCode": {
+      "type": "string"
+    },
+    "Dirrections": {
+      "type": "string",
+      "default": "Dirrections"
+    },
+    "geoPoint": {
+      "type": "component",
+      "repeatable": false,
+      "component": "location.geo-point"
+    },
+    "Name": {
+      "type": "string"
+    }
+  }
+}

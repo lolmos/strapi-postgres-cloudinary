@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "holbox_chiquila_departures",
+  "info": {
+    "name": "Holbox Chiquilá departures",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "departure": {
+      "type": "time"
+    },
+    "transportation_company": {
+      "model": "transportation-company"
+    },
+    "origin": {
+      "type": "enumeration",
+      "enum": [
+        "Holbox",
+        "Chiquila"
+      ]
+    },
+    "active": {
+      "type": "boolean"
+    }
+  }
+}

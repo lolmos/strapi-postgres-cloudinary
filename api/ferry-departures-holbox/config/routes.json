@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ferry-departures-holbox",
+      "handler": "ferry-departures-holbox.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ferry-departures-holbox",
+      "handler": "ferry-departures-holbox.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ferry-departures-holbox",
+      "handler": "ferry-departures-holbox.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
