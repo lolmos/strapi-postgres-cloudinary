@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_general_times_repeatables",
+  "info": {
+    "name": "timesRepeatable",
+    "icon": "calendar-times"
+  },
+  "options": {},
+  "attributes": {
+    "time": {
+      "type": "time"
+    }
+  }
+}

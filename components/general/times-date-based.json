@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_general_times_date_baseds",
+  "info": {
+    "name": "timesDateBased",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "datetime"
+    }
+  }
+}

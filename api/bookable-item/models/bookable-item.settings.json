@@ -22,7 +22,8 @@
           "localized": true
         }
       },
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "decription": {
       "pluginOptions": {
@@ -132,6 +133,18 @@
         "general.shuttle-price",
         "general.transfer-prices",
         "general.adult-child-price"
+      ]
+    },
+    "itemTimes": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "general.times-repeatable",
+        "general.times-date-based"
       ]
     }
   }
