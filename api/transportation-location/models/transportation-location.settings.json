@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "transportation_locations",
   "info": {
-    "name": "transportation location",
+    "name": "location",
     "description": ""
   },
   "options": {
