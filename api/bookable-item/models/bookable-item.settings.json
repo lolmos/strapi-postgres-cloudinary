@@ -132,8 +132,10 @@
       "components": [
         "general.shuttle-price",
         "general.transfer-prices",
-        "general.adult-child-price"
-      ]
+        "general.adult-child-price",
+        "general.price-booking-fee"
+      ],
+      "max": 1
     },
     "itemTimes": {
       "pluginOptions": {
@@ -146,6 +148,11 @@
         "general.times-repeatable",
         "general.times-date-based"
       ]
+    },
+    "location": {
+      "collection": "transportation-location",
+      "via": "bookable_items",
+      "dominant": true
     }
   }
 }

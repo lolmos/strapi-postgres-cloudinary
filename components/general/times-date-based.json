@@ -2,12 +2,19 @@
   "collectionName": "components_general_times_date_baseds",
   "info": {
     "name": "timesDateBased",
-    "icon": "address-book"
+    "icon": "address-book",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "date": {
       "type": "datetime"
+    },
+    "priceAdult": {
+      "type": "decimal"
+    },
+    "priceChild": {
+      "type": "decimal"
     }
   }
 }

@@ -1,8 +1,9 @@
 {
   "collectionName": "components_general_shuttle_prices",
   "info": {
-    "name": "shuttle-price",
-    "icon": "money-bill"
+    "name": "price-shuttle",
+    "icon": "money-bill",
+    "description": ""
   },
   "options": {},
   "attributes": {
