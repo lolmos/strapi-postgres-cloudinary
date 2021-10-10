@@ -1,8 +1,9 @@
 {
-  "collectionName": "components_ferry_departure_block_departures",
+  "collectionName": "components_ferry_departure_block",
   "info": {
     "name": "departure",
-    "icon": "ship"
+    "icon": "ship",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -18,6 +19,25 @@
         "Holbox",
         "Chiquia"
       ]
+    },
+    "isOperational": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "updates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.update"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "passenger",
+        "freight"
+      ],
+      "default": "passenger",
+      "required": true
     }
   }
 }

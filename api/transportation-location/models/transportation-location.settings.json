@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "holbox_chiquila_departures",
+  "collectionName": "transportation_locations",
   "info": {
-    "name": "Holbox Chiquilá departures",
+    "name": "location",
     "description": ""
   },
   "options": {
@@ -16,61 +16,64 @@
     }
   },
   "attributes": {
-    "departure": {
-      "type": "time",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "transportation_company": {
-      "model": "transportation-company"
-    },
-    "origin": {
-      "type": "enumeration",
-      "enum": [
-        "Holbox",
-        "Chiquila"
-      ],
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "active": {
-      "type": "boolean",
-      "default": true,
-      "required": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "type": {
+    "name": {
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
       },
-      "type": "enumeration",
-      "enum": [
-        "passenger",
-        "freight"
-      ],
-      "default": "passenger",
-      "required": true
+      "type": "string"
     },
-    "update": {
+    "Description": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "type": "richtext",
-      "maxLength": 200
+      "type": "richtext"
+    },
+    "addressLine1": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
+    },
+    "addressline2": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
+    },
+    "country": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "default": "México"
+    },
+    "postcode": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "geopoint": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "location.geo-point"
     }
   }
 }

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_general_updates",
+  "info": {
+    "name": "update",
+    "icon": "info-circle"
+  },
+  "options": {},
+  "attributes": {
+    "startOfChange": {
+      "type": "datetime",
+      "required": true
+    },
+    "endOfChange": {
+      "type": "datetime"
+    },
+    "message": {
+      "type": "richtext"
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "normal",
+        "alert"
+      ]
+    }
+  }
+}

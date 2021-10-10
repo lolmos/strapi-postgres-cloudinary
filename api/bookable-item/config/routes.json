@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/geopoints",
-      "handler": "geopoint.find",
+      "path": "/bookable-items",
+      "handler": "bookable-item.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/geopoints/count",
-      "handler": "geopoint.count",
+      "path": "/bookable-items/count",
+      "handler": "bookable-item.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/geopoints/:id",
-      "handler": "geopoint.findOne",
+      "path": "/bookable-items/:id",
+      "handler": "bookable-item.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/geopoints",
-      "handler": "geopoint.create",
+      "path": "/bookable-items",
+      "handler": "bookable-item.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/geopoints/:id",
-      "handler": "geopoint.update",
+      "path": "/bookable-items/:id",
+      "handler": "bookable-item.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/geopoints/:id",
-      "handler": "geopoint.delete",
+      "path": "/bookable-items/:id",
+      "handler": "bookable-item.delete",
       "config": {
         "policies": []
       }

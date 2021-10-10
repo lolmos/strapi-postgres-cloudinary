@@ -2,18 +2,23 @@
   "collectionName": "components_contact_phone_numbers",
   "info": {
     "name": "phoneNumber",
-    "icon": "phone-alt"
+    "icon": "phone-alt",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "number": {
       "type": "string"
     },
-    "mobile": {
-      "type": "boolean"
+    "isMobile": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     },
-    "WhatsApp": {
-      "type": "boolean"
+    "isWhatsApp": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     },
     "ext": {
       "type": "string"

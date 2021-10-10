@@ -2,12 +2,18 @@
   "kind": "collectionType",
   "collectionName": "transportation_departures",
   "info": {
-    "name": "Transportation Departure"
+    "name": "Transportation Departure",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
     "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
   },
   "attributes": {
     "slug": {
@@ -15,19 +21,106 @@
     },
     "departureTime": {
       "type": "time",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "arrival": {
-      "type": "time"
+      "type": "time",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "isActive": {
-      "type": "boolean"
+      "type": "boolean",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "default": true
     },
     "update": {
-      "type": "richtext"
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "transportation_company": {
       "model": "transportation-company"
+    },
+    "originAddress": {
+      "model": "transportation-location"
+    },
+    "origin": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "CHIQUILA",
+        "HOLBOX",
+        "CANCUNCENTER",
+        "CANCUNINTAIRPORT",
+        "PLAYADELCARMEN",
+        "PUERTOJUAREZ",
+        "AKUMAL",
+        "ISLABLANCA",
+        "VALLADOLID",
+        "MERIDA",
+        "SOLFERINO",
+        "KANTUNILKIN",
+        "TIZIMIN"
+      ],
+      "required": true,
+      "default": "CHIQUILA"
+    },
+    "destination": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "CHIQUILA",
+        "HOLBOX",
+        "CANCUNCENTER",
+        "CANCUNINTAIRPORT",
+        "PLAYADELCARMEN",
+        "PUERTOJUAREZ",
+        "AKUMAL",
+        "ISLABLANCA",
+        "VALLADOLID",
+        "MERIDA",
+        "SOLFERINO",
+        "KANTUNILKIN",
+        "TIZIMIN"
+      ],
+      "default": "CHIQUILA",
+      "required": true
+    },
+    "destinationAddress": {
+      "model": "transportation-location"
+    },
+    "pricesBuses": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "general.prices-buses"
     }
   }
 }
