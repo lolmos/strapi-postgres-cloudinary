@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_general_adult_child_prices",
+  "info": {
+    "name": "adultChildPrice",
+    "icon": "award"
+  },
+  "options": {},
+  "attributes": {
+    "adult": {
+      "type": "decimal"
+    },
+    "child": {
+      "type": "decimal"
+    }
+  }
+}

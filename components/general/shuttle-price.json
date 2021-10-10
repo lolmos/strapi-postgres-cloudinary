@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_general_shuttle_prices",
+  "info": {
+    "name": "shuttle-price",
+    "icon": "money-bill"
+  },
+  "options": {},
+  "attributes": {
+    "person": {
+      "type": "decimal"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bookable-items",
+      "handler": "bookable-item.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bookable-items/count",
+      "handler": "bookable-item.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bookable-items/:id",
+      "handler": "bookable-item.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bookable-items",
+      "handler": "bookable-item.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bookable-items/:id",
+      "handler": "bookable-item.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bookable-items/:id",
+      "handler": "bookable-item.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

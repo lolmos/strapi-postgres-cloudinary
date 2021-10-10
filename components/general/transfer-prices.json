@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_general_transfer_prices",
+  "info": {
+    "name": "transferPrices",
+    "icon": "allergies"
+  },
+  "options": {},
+  "attributes": {
+    "pax10": {
+      "type": "decimal"
+    },
+    "pax11": {
+      "type": "decimal"
+    },
+    "pax12": {
+      "type": "decimal"
+    },
+    "pax13": {
+      "type": "decimal"
+    },
+    "pax1": {
+      "type": "decimal"
+    },
+    "pax14": {
+      "type": "decimal"
+    },
+    "pax2": {
+      "type": "decimal"
+    },
+    "pax15": {
+      "type": "decimal"
+    },
+    "pax3": {
+      "type": "decimal"
+    },
+    "pax16": {
+      "type": "decimal"
+    },
+    "pax4": {
+      "type": "decimal"
+    },
+    "pax5": {
+      "type": "decimal"
+    },
+    "pax6": {
+      "type": "decimal"
+    },
+    "pax7": {
+      "type": "decimal"
+    },
+    "pax8": {
+      "type": "decimal"
+    },
+    "pax9": {
+      "type": "decimal"
+    }
+  }
+}
