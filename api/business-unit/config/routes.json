@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/geopoints",
-      "handler": "geopoint.find",
+      "path": "/business-units",
+      "handler": "business-unit.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/geopoints/count",
-      "handler": "geopoint.count",
+      "path": "/business-units/count",
+      "handler": "business-unit.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/geopoints/:id",
-      "handler": "geopoint.findOne",
+      "path": "/business-units/:id",
+      "handler": "business-unit.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/geopoints",
-      "handler": "geopoint.create",
+      "path": "/business-units",
+      "handler": "business-unit.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/geopoints/:id",
-      "handler": "geopoint.update",
+      "path": "/business-units/:id",
+      "handler": "business-unit.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/geopoints/:id",
-      "handler": "geopoint.delete",
+      "path": "/business-units/:id",
+      "handler": "business-unit.delete",
       "config": {
         "policies": []
       }

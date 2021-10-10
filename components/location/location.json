@@ -22,17 +22,16 @@
     "postCode": {
       "type": "string"
     },
-    "Dirrections": {
-      "type": "string",
-      "default": "Dirrections"
+    "Name": {
+      "type": "string"
+    },
+    "Directions": {
+      "type": "richtext"
     },
     "geoPoint": {
       "type": "component",
       "repeatable": false,
       "component": "location.geo-point"
-    },
-    "Name": {
-      "type": "string"
     }
   }
 }

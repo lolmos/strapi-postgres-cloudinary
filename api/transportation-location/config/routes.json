@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/transportation-locations",
+      "handler": "transportation-location.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transportation-locations/count",
+      "handler": "transportation-location.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transportation-locations/:id",
+      "handler": "transportation-location.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transportation-locations",
+      "handler": "transportation-location.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transportation-locations/:id",
+      "handler": "transportation-location.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/transportation-locations/:id",
+      "handler": "transportation-location.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

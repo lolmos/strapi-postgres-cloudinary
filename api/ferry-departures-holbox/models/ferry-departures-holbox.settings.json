@@ -1,19 +1,72 @@
 {
   "kind": "singleType",
-  "collectionName": "ferry_departures_holboxes",
+  "collectionName": "page-ferry_departures_holboxes",
   "info": {
-    "name": "ferry-departures-holbox"
+    "name": "page-ferry-departures-holbox",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "departure": {
       "type": "component",
       "repeatable": true,
-      "component": "ferry-departure-block.departure"
+      "component": "ferry-departure-block.departure",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "body": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext",
+      "required": true
+    },
+    "allActive": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "boolean",
+      "default": true
+    },
+    "ferryPriceBlock": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "ferry-departure-block.ferry-price-block"
+    },
+    "type": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "passenger",
+        "freight"
+      ],
+      "default": "passenger",
+      "required": true
     }
   }
 }

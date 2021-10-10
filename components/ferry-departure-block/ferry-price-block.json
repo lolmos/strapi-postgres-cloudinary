@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_ferry_departure_block_ferry_price_blocks",
+  "info": {
+    "name": "ferryPriceBlock",
+    "icon": "money-check-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "adult",
+        "child",
+        "mexicanSenior",
+        "quintanarooResident",
+        "quintanarooChild",
+        "local"
+      ]
+    },
+    "details": {
+      "type": "richtext",
+      "maxLength": 200,
+      "required": true
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}

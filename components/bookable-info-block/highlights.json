@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_bookable_info_block_highlights",
+  "info": {
+    "name": "Highlights",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "richtext"
+    }
+  }
+}
