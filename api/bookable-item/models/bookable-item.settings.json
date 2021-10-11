@@ -153,6 +153,10 @@
       "collection": "transportation-location",
       "via": "bookable_items",
       "dominant": true
+    },
+    "event": {
+      "via": "bookable_item",
+      "model": "event"
     }
   }
 }

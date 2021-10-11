@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event-types",
+  "info": {
+    "name": "event-tag",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "unique": true,
+      "required": false
+    },
+    "events": {
+      "via": "event_tags",
+      "collection": "event"
+    }
+  }
+}

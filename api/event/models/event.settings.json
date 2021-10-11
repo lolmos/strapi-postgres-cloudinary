@@ -84,6 +84,15 @@
     },
     "location": {
       "model": "transportation-location"
+    },
+    "bookable_item": {
+      "model": "bookable-item",
+      "via": "event"
+    },
+    "event_tags": {
+      "collection": "event-type",
+      "via": "events",
+      "dominant": true
     }
   }
 }
