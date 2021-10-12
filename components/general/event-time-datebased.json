@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_general_event_time_datebaseds",
+  "info": {
+    "name": "event-time-datebased",
+    "icon": "angle-double-down"
+  },
+  "options": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "start": {
+      "type": "time"
+    },
+    "end": {
+      "type": "time"
+    }
+  }
+}

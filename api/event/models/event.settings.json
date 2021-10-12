@@ -43,16 +43,6 @@
       "default": false,
       "required": true
     },
-    "eventtimes": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "general.event-times"
-    },
     "price": {
       "type": "component",
       "repeatable": false,
@@ -93,6 +83,34 @@
       "collection": "event-type",
       "via": "events",
       "dominant": true
+    },
+    "type": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "DATEBASED",
+        "REPEATABLE"
+      ]
+    },
+    "dates": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "dynamiczone",
+      "components": [
+        "general.event-time-datebased",
+        "general.event-times"
+      ]
+    },
+    "business_unit": {
+      "via": "event",
+      "model": "business-unit"
     }
   }
 }
