@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "event-categories",
+  "collectionName": "accommodation_categories",
   "info": {
-    "name": "event-category",
+    "name": "accommodation-categories",
     "description": ""
   },
   "options": {
@@ -17,18 +17,21 @@
   },
   "attributes": {
     "name": {
-      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
-      "unique": true,
-      "required": false
+      "type": "string",
+      "unique": true
     },
-    "events": {
-      "via": "event_tags",
-      "collection": "event"
+    "parent": {
+      "model": "accommodation-categories",
+      "via": "accommodation_categories"
+    },
+    "accommodation_categories": {
+      "collection": "accommodation-categories",
+      "via": "parent"
     }
   }
 }

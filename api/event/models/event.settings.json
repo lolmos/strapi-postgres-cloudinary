@@ -80,8 +80,8 @@
       "via": "event"
     },
     "event_tags": {
-      "collection": "event-type",
       "via": "events",
+      "collection": "event-type",
       "dominant": true
     },
     "type": {
