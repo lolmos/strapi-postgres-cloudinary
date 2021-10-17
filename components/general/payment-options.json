@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_general_payment_options",
+  "info": {
+    "name": "payment-options",
+    "icon": "money-bill-alt"
+  },
+  "options": {},
+  "attributes": {
+    "mastercard": {
+      "type": "boolean",
+      "default": false
+    },
+    "visa": {
+      "type": "boolean",
+      "default": false
+    },
+    "amex": {
+      "type": "boolean"
+    },
+    "paypal": {
+      "type": "boolean"
+    },
+    "dinners": {
+      "type": "boolean",
+      "default": false
+    },
+    "discovery": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

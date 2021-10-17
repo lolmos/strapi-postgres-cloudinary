@@ -529,7 +529,8 @@
     "schemas": {
       "Accommodation-categories": {
         "required": [
-          "id"
+          "id",
+          "decription"
         ],
         "properties": {
           "id": {
@@ -540,7 +541,8 @@
           },
           "parent": {
             "required": [
-              "id"
+              "id",
+              "decription"
             ],
             "properties": {
               "id": {
@@ -557,6 +559,39 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "location": {
+                "type": "component"
+              },
+              "decription": {
+                "type": "string"
+              },
+              "contactnumbers": {
+                "type": "component"
+              },
+              "bookingComId": {
+                "type": "string"
+              },
+              "airbnbId": {
+                "type": "string"
+              },
+              "coverImage": {
+                "type": "string"
+              },
+              "logo": {
+                "type": "string"
+              },
+              "gallery": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "acommodationAmenities": {
+                "type": "component"
+              },
+              "paymentOptions": {
+                "type": "component"
               },
               "localizations": {
                 "type": "array",
@@ -582,7 +617,8 @@
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "decription"
               ],
               "properties": {
                 "id": {
@@ -599,6 +635,39 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "location": {
+                  "type": "component"
+                },
+                "decription": {
+                  "type": "string"
+                },
+                "contactnumbers": {
+                  "type": "component"
+                },
+                "bookingComId": {
+                  "type": "string"
+                },
+                "airbnbId": {
+                  "type": "string"
+                },
+                "coverImage": {
+                  "type": "string"
+                },
+                "logo": {
+                  "type": "string"
+                },
+                "gallery": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "acommodationAmenities": {
+                  "type": "component"
+                },
+                "paymentOptions": {
+                  "type": "component"
                 },
                 "localizations": {
                   "type": "array",
@@ -621,11 +690,376 @@
               }
             }
           },
+          "location": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "addressLine1": {
+                  "type": "string"
+                },
+                "addressLine2": {
+                  "type": "string"
+                },
+                "stateRegion": {
+                  "type": "string"
+                },
+                "Country": {
+                  "type": "string"
+                },
+                "postCode": {
+                  "type": "string"
+                },
+                "Name": {
+                  "type": "string"
+                },
+                "Directions": {
+                  "type": "string"
+                },
+                "geoPoint": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "Latitude",
+                    "Longitude"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Latitude": {
+                      "type": "string"
+                    },
+                    "Longitude": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "decription": {
+            "type": "string"
+          },
+          "contactnumbers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "isMobile",
+                "isWhatsApp"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "number": {
+                  "type": "string"
+                },
+                "isMobile": {
+                  "type": "boolean",
+                  "default": true
+                },
+                "isWhatsApp": {
+                  "type": "boolean",
+                  "default": true
+                },
+                "ext": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "bookingComId": {
+            "type": "string"
+          },
+          "airbnbId": {
+            "type": "string"
+          },
+          "coverImage": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "logo": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "gallery": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alternativeText": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "acommodationAmenities": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "breakfastIncluded": {
+                "type": "boolean",
+                "default": false
+              },
+              "petFriendly": {
+                "type": "boolean",
+                "default": false
+              },
+              "swimmingPool": {
+                "type": "boolean",
+                "default": false
+              },
+              "miniBar": {
+                "type": "boolean"
+              },
+              "airConditioning": {
+                "type": "boolean",
+                "default": false
+              },
+              "beachfront": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          },
+          "paymentOptions": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "mastercard": {
+                "type": "boolean",
+                "default": false
+              },
+              "visa": {
+                "type": "boolean",
+                "default": false
+              },
+              "amex": {
+                "type": "boolean"
+              },
+              "paypal": {
+                "type": "boolean"
+              },
+              "dinners": {
+                "type": "boolean",
+                "default": false
+              },
+              "discovery": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
               "required": [
-                "id"
+                "id",
+                "decription"
               ],
               "properties": {
                 "id": {
@@ -642,6 +1076,39 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "location": {
+                  "type": "component"
+                },
+                "decription": {
+                  "type": "string"
+                },
+                "contactnumbers": {
+                  "type": "component"
+                },
+                "bookingComId": {
+                  "type": "string"
+                },
+                "airbnbId": {
+                  "type": "string"
+                },
+                "coverImage": {
+                  "type": "string"
+                },
+                "logo": {
+                  "type": "string"
+                },
+                "gallery": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "acommodationAmenities": {
+                  "type": "component"
+                },
+                "paymentOptions": {
+                  "type": "component"
                 },
                 "localizations": {
                   "type": "array",
@@ -674,6 +1141,9 @@
         }
       },
       "NewAccommodation-categories": {
+        "required": [
+          "decription"
+        ],
         "properties": {
           "name": {
             "type": "string"
@@ -685,6 +1155,166 @@
             "type": "array",
             "items": {
               "type": "string"
+            }
+          },
+          "location": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "addressLine1": {
+                  "type": "string"
+                },
+                "addressLine2": {
+                  "type": "string"
+                },
+                "stateRegion": {
+                  "type": "string"
+                },
+                "Country": {
+                  "type": "string"
+                },
+                "postCode": {
+                  "type": "string"
+                },
+                "Name": {
+                  "type": "string"
+                },
+                "Directions": {
+                  "type": "string"
+                },
+                "geoPoint": {
+                  "type": "object",
+                  "required": [
+                    "id",
+                    "Latitude",
+                    "Longitude"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "Latitude": {
+                      "type": "string"
+                    },
+                    "Longitude": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "decription": {
+            "type": "string"
+          },
+          "contactnumbers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "isMobile",
+                "isWhatsApp"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "number": {
+                  "type": "string"
+                },
+                "isMobile": {
+                  "type": "boolean",
+                  "default": true
+                },
+                "isWhatsApp": {
+                  "type": "boolean",
+                  "default": true
+                },
+                "ext": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "bookingComId": {
+            "type": "string"
+          },
+          "airbnbId": {
+            "type": "string"
+          },
+          "acommodationAmenities": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "breakfastIncluded": {
+                "type": "boolean",
+                "default": false
+              },
+              "petFriendly": {
+                "type": "boolean",
+                "default": false
+              },
+              "swimmingPool": {
+                "type": "boolean",
+                "default": false
+              },
+              "miniBar": {
+                "type": "boolean"
+              },
+              "airConditioning": {
+                "type": "boolean",
+                "default": false
+              },
+              "beachfront": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          },
+          "paymentOptions": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "mastercard": {
+                "type": "boolean",
+                "default": false
+              },
+              "visa": {
+                "type": "boolean",
+                "default": false
+              },
+              "amex": {
+                "type": "boolean"
+              },
+              "paypal": {
+                "type": "boolean"
+              },
+              "dinners": {
+                "type": "boolean",
+                "default": false
+              },
+              "discovery": {
+                "type": "boolean",
+                "default": false
+              }
             }
           },
           "localizations": {
