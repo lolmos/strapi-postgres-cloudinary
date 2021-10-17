@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_general_acommodation_amenities",
+  "info": {
+    "name": "acommodation-amenities",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "breakfastIncluded": {
+      "type": "boolean",
+      "default": false
+    },
+    "petFriendly": {
+      "type": "boolean",
+      "default": false
+    },
+    "swimmingPool": {
+      "type": "boolean",
+      "default": false
+    },
+    "miniBar": {
+      "type": "boolean"
+    },
+    "airConditioning": {
+      "type": "boolean",
+      "default": false
+    },
+    "beachfront": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

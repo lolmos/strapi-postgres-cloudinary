@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_general_price_booking_fees",
+  "info": {
+    "name": "priceBookingFee",
+    "icon": "baby-carriage"
+  },
+  "options": {},
+  "attributes": {
+    "bookingFee": {
+      "type": "decimal",
+      "required": true
+    },
+    "itemPrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "priceIsDollars": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

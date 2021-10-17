@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_general_event_times",
+  "info": {
+    "name": "event-times",
+    "icon": "anchor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "start": {
+      "type": "time",
+      "required": true,
+      "default": "08:00:00"
+    },
+    "monday": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "tuesday": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "wednesday": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "thursday": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "friday": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "saturday": {
+      "type": "boolean",
+      "default": false
+    },
+    "sunday": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "end": {
+      "type": "time",
+      "required": true
+    }
+  }
+}

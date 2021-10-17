@@ -74,6 +74,10 @@
         }
       },
       "component": "location.geo-point"
+    },
+    "bookable_items": {
+      "via": "location",
+      "collection": "bookable-item"
     }
   }
 }
