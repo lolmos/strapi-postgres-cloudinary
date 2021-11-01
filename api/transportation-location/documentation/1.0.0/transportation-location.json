@@ -663,6 +663,12 @@
               }
             }
           },
+          "City": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -699,6 +705,12 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "City": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -775,6 +787,12 @@
             "items": {
               "type": "string"
             }
+          },
+          "City": {
+            "type": "string"
+          },
+          "state": {
+            "type": "string"
           },
           "localizations": {
             "type": "array",

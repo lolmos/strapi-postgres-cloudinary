@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "accommodation_categories",
+  "collectionName": "accommodations",
   "info": {
-    "name": "accommodation-categories",
+    "name": "accommodation",
     "description": ""
   },
   "options": {

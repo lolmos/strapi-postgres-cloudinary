@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "transportation_departure_categories",
   "info": {
-    "name": "transportation-departure-category"
+    "name": "transportation-departure-category",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -30,6 +31,16 @@
         }
       },
       "type": "string"
+    },
+    "parent": {
+      "collection": "transportation-departure-category",
+      "via": "children",
+      "model": "transportation-departure-category"
+    },
+    "children": {
+      "model": "transportation-departure-category",
+      "via": "parent",
+      "collection": "transportation-departure-category"
     }
   }
 }

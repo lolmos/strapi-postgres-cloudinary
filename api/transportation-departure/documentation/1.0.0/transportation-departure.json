@@ -532,7 +532,8 @@
           "id",
           "departureTime",
           "origin",
-          "destination"
+          "destination",
+          "type"
         ],
         "properties": {
           "id": {
@@ -632,6 +633,12 @@
                   "type": "string"
                 }
               },
+              "City": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
               "localizations": {
                 "type": "array",
                 "items": {
@@ -725,6 +732,12 @@
                   "type": "string"
                 }
               },
+              "City": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
               "localizations": {
                 "type": "array",
                 "items": {
@@ -766,6 +779,21 @@
               }
             }
           },
+          "type": {
+            "type": "string",
+            "default": "BUS_SECOND_CLASS",
+            "enum": [
+              "BUS_FIRST_CLASS",
+              "BUS_SECOND_CLASS",
+              "BUS_THIRD_CLASS",
+              "BUS_CHARTERED",
+              "BUS_PUBLIC",
+              "COLLECTIVO_PUBLIC",
+              "COLLECTIVO_AIRPORT",
+              "TRAIN"
+            ]
+          },
+          
           "localizations": {
             "type": "array",
             "items": {
@@ -773,7 +801,8 @@
                 "id",
                 "departureTime",
                 "origin",
-                "destination"
+                "destination",
+                "type"
               ],
               "properties": {
                 "id": {
@@ -842,6 +871,20 @@
                 "pricesBuses": {
                   "type": "component"
                 },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "BUS_FIRST_CLASS",
+                    "BUS_SECOND_CLASS",
+                    "BUS_THIRD_CLASS",
+                    "BUS_CHARTERED",
+                    "BUS_PUBLIC",
+                    "COLLECTIVO_PUBLIC",
+                    "COLLECTIVO_AIRPORT",
+                    "TRAIN"
+                  ]
+                },
+           
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -876,7 +919,8 @@
         "required": [
           "departureTime",
           "origin",
-          "destination"
+          "destination",
+          "type"
         ],
         "properties": {
           "slug": {
@@ -963,6 +1007,21 @@
               }
             }
           },
+          "type": {
+            "type": "string",
+            "default": "BUS_SECOND_CLASS",
+            "enum": [
+              "BUS_FIRST_CLASS",
+              "BUS_SECOND_CLASS",
+              "BUS_THIRD_CLASS",
+              "BUS_CHARTERED",
+              "BUS_PUBLIC",
+              "COLLECTIVO_PUBLIC",
+              "COLLECTIVO_AIRPORT",
+              "TRAIN"
+            ]
+          },
+
           "localizations": {
             "type": "array",
             "items": {

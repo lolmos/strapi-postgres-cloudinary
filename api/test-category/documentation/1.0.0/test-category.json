@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/transportation-departure-categories": {
+    "/test-categories": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Transportation-departure-category"
+          "Test-category"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Transportation-departure-category"
+          "Test-category"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTransportation-departure-category"
+                "$ref": "#/components/schemas/NewTest-category"
               }
             }
           }
         }
       }
     },
-    "/transportation-departure-categories/count": {
+    "/test-categories/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "Transportation-departure-category"
+          "Test-category"
         ],
         "parameters": []
       }
     },
-    "/transportation-departure-categories/{id}": {
+    "/test-categories/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Transportation-departure-category"
+          "Test-category"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Transportation-departure-category"
+          "Test-category"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTransportation-departure-category"
+                "$ref": "#/components/schemas/NewTest-category"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Transportation-departure-category"
+          "Test-category"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Transportation-departure-category": {
+      "Test-category": {
         "required": [
           "id"
         ],
@@ -538,157 +538,10 @@
           "shortname": {
             "type": "string"
           },
-          "name": {
+          "name_es": {
             "type": "string"
           },
-          "parent": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "shortname": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "parent": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "children": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "children": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "shortname": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "parent": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "children": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "shortname": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "parent": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "children": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "locale": {
+          "name_en": {
             "type": "string"
           },
           "published_at": {
@@ -697,33 +550,15 @@
           }
         }
       },
-      "NewTransportation-departure-category": {
+      "NewTest-category": {
         "properties": {
           "shortname": {
             "type": "string"
           },
-          "name": {
+          "name_es": {
             "type": "string"
           },
-          "parent": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "children": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "localizations": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "locale": {
+          "name_en": {
             "type": "string"
           },
           "published_at": {

@@ -743,6 +743,12 @@
                   "type": "string"
                 }
               },
+              "City": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
               "localizations": {
                 "type": "array",
                 "items": {
