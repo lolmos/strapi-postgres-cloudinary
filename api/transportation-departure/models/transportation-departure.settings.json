@@ -117,7 +117,7 @@
       "repeatable": false,
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
       "component": "general.prices-buses"
@@ -141,6 +141,17 @@
       ],
       "required": true,
       "default": "BUS_SECOND_CLASS"
+    },
+    "departure_days": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "component": "general.departure-days",
+      "required": true
     }
   }
 }

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/01/2021 11:23:12 AM"
+    "x-generation-date": "11/01/2021 11:51:45 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -13513,7 +13513,8 @@
           "departureTime",
           "origin",
           "destination",
-          "type"
+          "type",
+          "departure_days"
         ],
         "properties": {
           "id": {
@@ -13776,26 +13777,41 @@
           "departure_days": {
             "type": "object",
             "required": [
-              "id",
-              "everyday"
+              "id"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "everyday": {
+              "every_day": {
                 "type": "boolean",
                 "default": true
               },
-              "Monday": {
+              "monday_departure": {
                 "type": "boolean",
                 "default": false
               },
-              "Tuesday": {
+              "tuesday_departure": {
                 "type": "boolean",
                 "default": false
               },
-              "Wednesday": {
+              "wednesday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "thursday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "friday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "saturday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "sunday_departure": {
                 "type": "boolean",
                 "default": false
               }
@@ -13809,7 +13825,8 @@
                 "departureTime",
                 "origin",
                 "destination",
-                "type"
+                "type",
+                "departure_days"
               ],
               "properties": {
                 "id": {
@@ -13929,7 +13946,8 @@
           "departureTime",
           "origin",
           "destination",
-          "type"
+          "type",
+          "departure_days"
         ],
         "properties": {
           "slug": {
@@ -14033,26 +14051,41 @@
           "departure_days": {
             "type": "object",
             "required": [
-              "id",
-              "everyday"
+              "id"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "everyday": {
+              "every_day": {
                 "type": "boolean",
                 "default": true
               },
-              "Monday": {
+              "monday_departure": {
                 "type": "boolean",
                 "default": false
               },
-              "Tuesday": {
+              "tuesday_departure": {
                 "type": "boolean",
                 "default": false
               },
-              "Wednesday": {
+              "wednesday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "thursday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "friday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "saturday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "sunday_departure": {
                 "type": "boolean",
                 "default": false
               }

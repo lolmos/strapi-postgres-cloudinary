@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_general_departure_days",
+  "info": {
+    "name": "departure_days",
+    "icon": "arrow-alt-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "every_day": {
+      "type": "boolean",
+      "default": true
+    },
+    "monday_departure": {
+      "type": "boolean",
+      "default": false
+    },
+    "tuesday_departure": {
+      "type": "boolean",
+      "default": false
+    },
+    "wednesday_departure": {
+      "type": "boolean",
+      "default": false
+    },
+    "thursday_departure": {
+      "type": "boolean",
+      "default": false
+    },
+    "friday_departure": {
+      "type": "boolean",
+      "default": false
+    },
+    "saturday_departure": {
+      "type": "boolean",
+      "default": false
+    },
+    "sunday_departure": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

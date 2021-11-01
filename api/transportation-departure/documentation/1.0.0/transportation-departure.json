@@ -533,7 +533,8 @@
           "departureTime",
           "origin",
           "destination",
-          "type"
+          "type",
+          "departure_days"
         ],
         "properties": {
           "id": {
@@ -793,7 +794,49 @@
               "TRAIN"
             ]
           },
-          
+          "departure_days": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "every_day": {
+                "type": "boolean",
+                "default": true
+              },
+              "monday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "tuesday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "wednesday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "thursday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "friday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "saturday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "sunday_departure": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -802,7 +845,8 @@
                 "departureTime",
                 "origin",
                 "destination",
-                "type"
+                "type",
+                "departure_days"
               ],
               "properties": {
                 "id": {
@@ -884,7 +928,9 @@
                     "TRAIN"
                   ]
                 },
-           
+                "departure_days": {
+                  "type": "component"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -920,7 +966,8 @@
           "departureTime",
           "origin",
           "destination",
-          "type"
+          "type",
+          "departure_days"
         ],
         "properties": {
           "slug": {
@@ -1021,7 +1068,49 @@
               "TRAIN"
             ]
           },
-
+          "departure_days": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "every_day": {
+                "type": "boolean",
+                "default": true
+              },
+              "monday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "tuesday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "wednesday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "thursday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "friday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "saturday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "sunday_departure": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
