@@ -634,7 +634,7 @@
                   "type": "string"
                 }
               },
-              "City": {
+              "city_": {
                 "type": "string"
               },
               "state": {
@@ -733,7 +733,7 @@
                   "type": "string"
                 }
               },
-              "City": {
+              "city_": {
                 "type": "string"
               },
               "state": {

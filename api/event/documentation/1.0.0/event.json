@@ -743,7 +743,7 @@
                   "type": "string"
                 }
               },
-              "City": {
+              "city_": {
                 "type": "string"
               },
               "state": {

@@ -79,7 +79,7 @@
       "via": "location",
       "collection": "bookable-item"
     },
-    "City": {
+    "city_": {
       "pluginOptions": {
         "i18n": {
           "localized": false
