@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transportation_departure_categories",
+  "info": {
+    "name": "transportation-departure-category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "shortname": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "parent": {
+      "collection": "transportation-departure-category",
+      "via": "children",
+      "model": "transportation-departure-category"
+    },
+    "children": {
+      "model": "transportation-departure-category",
+      "via": "parent",
+      "collection": "transportation-departure-category"
+    }
+  }
+}

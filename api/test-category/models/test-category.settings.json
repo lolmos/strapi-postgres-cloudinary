@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "test_categories",
+  "info": {
+    "name": "test-category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shortname": {
+      "type": "string"
+    },
+    "name_es": {
+      "type": "string"
+    },
+    "name_en": {
+      "type": "string"
+    }
+  }
+}

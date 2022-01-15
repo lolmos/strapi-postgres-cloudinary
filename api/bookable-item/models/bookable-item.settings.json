@@ -150,8 +150,8 @@
       ]
     },
     "location": {
-      "collection": "transportation-location",
       "via": "bookable_items",
+      "collection": "transportation-location",
       "dominant": true
     },
     "event": {

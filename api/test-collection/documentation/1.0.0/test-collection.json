@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/transportation-locations": {
+    "/test-collections": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -52,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Transportation-location"
+          "Test-collection"
         ],
         "parameters": [
           {
@@ -244,7 +244,7 @@
         },
         "summary": "",
         "tags": [
-          "Transportation-location"
+          "Test-collection"
         ],
         "requestBody": {
           "description": "",
@@ -252,14 +252,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTransportation-location"
+                "$ref": "#/components/schemas/NewTest-collection"
               }
             }
           }
         }
       }
     },
-    "/transportation-locations/count": {
+    "/test-collections/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -311,12 +311,12 @@
         },
         "summary": "",
         "tags": [
-          "Transportation-location"
+          "Test-collection"
         ],
         "parameters": []
       }
     },
-    "/transportation-locations/{id}": {
+    "/test-collections/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -368,7 +368,7 @@
         },
         "summary": "",
         "tags": [
-          "Transportation-location"
+          "Test-collection"
         ],
         "parameters": [
           {
@@ -434,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Transportation-location"
+          "Test-collection"
         ],
         "requestBody": {
           "description": "",
@@ -442,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTransportation-location"
+                "$ref": "#/components/schemas/NewTest-collection"
               }
             }
           }
@@ -508,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Transportation-location"
+          "Test-collection"
         ],
         "parameters": [
           {
@@ -527,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Transportation-location": {
+      "Test-collection": {
         "required": [
           "id"
         ],
@@ -538,117 +538,23 @@
           "name": {
             "type": "string"
           },
-          "Description": {
-            "type": "string"
-          },
-          "addressLine1": {
-            "type": "string"
-          },
-          "addressline2": {
-            "type": "string"
-          },
-          "country": {
-            "type": "string",
-            "default": "México"
-          },
-          "postcode": {
-            "type": "string"
-          },
-          "geopoint": {
-            "type": "object",
-            "required": [
-              "id",
-              "Latitude",
-              "Longitude"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Latitude": {
-                "type": "string"
-              },
-              "Longitude": {
-                "type": "string"
-              }
-            }
-          },
-          "bookable_items": {
+          "test_categories": {
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "name",
-                "decription"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
-                "name": {
+                "shortname": {
                   "type": "string"
                 },
-                "decription": {
+                "name_es": {
                   "type": "string"
                 },
-                "coverPhoto": {
-                  "type": "string"
-                },
-                "checkfrontId": {
-                  "type": "string"
-                },
-                "isActive": {
-                  "type": "boolean"
-                },
-                "gallery": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "Duration": {
-                  "type": "string"
-                },
-                "itinerary": {
-                  "type": "string"
-                },
-                "highlights": {
-                  "type": "string"
-                },
-                "type": {
-                  "type": "string",
-                  "enum": [
-                    "SHUTTLE",
-                    "TRANSFER",
-                    "FLIGHT",
-                    "TOUR",
-                    "EVENT",
-                    "MEDICALSERVICE",
-                    "BEAUTYTREATMENT"
-                  ]
-                },
-                "prices": {
-                  "type": "dynamiczone"
-                },
-                "itemTimes": {
-                  "type": "dynamiczone"
-                },
-                "location": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "event": {
-                  "type": "string"
-                },
-                "localizations": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "locale": {
+                "name_en": {
                   "type": "string"
                 },
                 "published_at": {
@@ -663,12 +569,6 @@
               }
             }
           },
-          "city_": {
-            "type": "string"
-          },
-          "state": {
-            "type": "string"
-          },
           "localizations": {
             "type": "array",
             "items": {
@@ -682,35 +582,11 @@
                 "name": {
                   "type": "string"
                 },
-                "Description": {
-                  "type": "string"
-                },
-                "addressLine1": {
-                  "type": "string"
-                },
-                "addressline2": {
-                  "type": "string"
-                },
-                "country": {
-                  "type": "string"
-                },
-                "postcode": {
-                  "type": "string"
-                },
-                "geopoint": {
-                  "type": "component"
-                },
-                "bookable_items": {
+                "test_categories": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
-                },
-                "city_": {
-                  "type": "string"
-                },
-                "state": {
-                  "type": "string"
                 },
                 "localizations": {
                   "type": "array",
@@ -742,57 +618,16 @@
           }
         }
       },
-      "NewTransportation-location": {
+      "NewTest-collection": {
         "properties": {
           "name": {
             "type": "string"
           },
-          "Description": {
-            "type": "string"
-          },
-          "addressLine1": {
-            "type": "string"
-          },
-          "addressline2": {
-            "type": "string"
-          },
-          "country": {
-            "type": "string",
-            "default": "México"
-          },
-          "postcode": {
-            "type": "string"
-          },
-          "geopoint": {
-            "type": "object",
-            "required": [
-              "id",
-              "Latitude",
-              "Longitude"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "Latitude": {
-                "type": "string"
-              },
-              "Longitude": {
-                "type": "string"
-              }
-            }
-          },
-          "bookable_items": {
+          "test_categories": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "city_": {
-            "type": "string"
-          },
-          "state": {
-            "type": "string"
           },
           "localizations": {
             "type": "array",

@@ -78,6 +78,22 @@
     "bookable_items": {
       "via": "location",
       "collection": "bookable-item"
+    },
+    "city_": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
+    },
+    "state": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
     }
   }
 }

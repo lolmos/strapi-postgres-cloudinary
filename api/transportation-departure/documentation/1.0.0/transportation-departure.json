@@ -532,7 +532,9 @@
           "id",
           "departureTime",
           "origin",
-          "destination"
+          "destination",
+          "type",
+          "departure_days"
         ],
         "properties": {
           "id": {
@@ -632,6 +634,12 @@
                   "type": "string"
                 }
               },
+              "city_": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
               "localizations": {
                 "type": "array",
                 "items": {
@@ -725,6 +733,12 @@
                   "type": "string"
                 }
               },
+              "city_": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
               "localizations": {
                 "type": "array",
                 "items": {
@@ -766,6 +780,63 @@
               }
             }
           },
+          "type": {
+            "type": "string",
+            "default": "BUS_SECOND_CLASS",
+            "enum": [
+              "BUS_FIRST_CLASS",
+              "BUS_SECOND_CLASS",
+              "BUS_THIRD_CLASS",
+              "BUS_CHARTERED",
+              "BUS_PUBLIC",
+              "COLLECTIVO_PUBLIC",
+              "COLLECTIVO_AIRPORT",
+              "TRAIN"
+            ]
+          },
+          "departure_days": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "every_day": {
+                "type": "boolean",
+                "default": true
+              },
+              "monday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "tuesday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "wednesday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "thursday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "friday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "saturday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "sunday_departure": {
+                "type": "boolean",
+                "default": false
+              }
+            }
+          },
           "localizations": {
             "type": "array",
             "items": {
@@ -773,7 +844,9 @@
                 "id",
                 "departureTime",
                 "origin",
-                "destination"
+                "destination",
+                "type",
+                "departure_days"
               ],
               "properties": {
                 "id": {
@@ -842,6 +915,22 @@
                 "pricesBuses": {
                   "type": "component"
                 },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "BUS_FIRST_CLASS",
+                    "BUS_SECOND_CLASS",
+                    "BUS_THIRD_CLASS",
+                    "BUS_CHARTERED",
+                    "BUS_PUBLIC",
+                    "COLLECTIVO_PUBLIC",
+                    "COLLECTIVO_AIRPORT",
+                    "TRAIN"
+                  ]
+                },
+                "departure_days": {
+                  "type": "component"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {
@@ -876,7 +965,9 @@
         "required": [
           "departureTime",
           "origin",
-          "destination"
+          "destination",
+          "type",
+          "departure_days"
         ],
         "properties": {
           "slug": {
@@ -960,6 +1051,63 @@
               },
               "senior": {
                 "type": "number"
+              }
+            }
+          },
+          "type": {
+            "type": "string",
+            "default": "BUS_SECOND_CLASS",
+            "enum": [
+              "BUS_FIRST_CLASS",
+              "BUS_SECOND_CLASS",
+              "BUS_THIRD_CLASS",
+              "BUS_CHARTERED",
+              "BUS_PUBLIC",
+              "COLLECTIVO_PUBLIC",
+              "COLLECTIVO_AIRPORT",
+              "TRAIN"
+            ]
+          },
+          "departure_days": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "every_day": {
+                "type": "boolean",
+                "default": true
+              },
+              "monday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "tuesday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "wednesday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "thursday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "friday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "saturday_departure": {
+                "type": "boolean",
+                "default": false
+              },
+              "sunday_departure": {
+                "type": "boolean",
+                "default": false
               }
             }
           },

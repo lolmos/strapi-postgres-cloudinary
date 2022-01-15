@@ -957,6 +957,12 @@
                     "type": "string"
                   }
                 },
+                "city_": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
                 "localizations": {
                   "type": "array",
                   "items": {

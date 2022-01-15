@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/accommodations": {
+    "/transportation-departure-categories": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10,9 +10,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Accommodation"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Accommodation"
+          "Transportation-departure-category"
         ],
         "parameters": [
           {
@@ -201,72 +202,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Accommodation"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Accommodation"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewAccommodation"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/accommodations/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,12 +244,22 @@
         },
         "summary": "",
         "tags": [
-          "Accommodation"
+          "Transportation-departure-category"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewTransportation-departure-category"
+              }
+            }
+          }
+        }
       }
     },
-    "/accommodations/{id}": {
+    "/transportation-departure-categories/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +269,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Accommodation"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Accommodation"
+          "Transportation-departure-category"
+        ],
+        "parameters": []
+      }
+    },
+    "/transportation-departure-categories/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Transportation-departure-category"
         ],
         "parameters": [
           {
@@ -383,7 +392,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Accommodation"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Accommodation"
+          "Transportation-departure-category"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewAccommodation"
+                "$ref": "#/components/schemas/NewTransportation-departure-category"
               }
             }
           }
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Accommodation"
+          "Transportation-departure-category"
         ],
         "parameters": [
           {
@@ -514,50 +527,113 @@
   },
   "components": {
     "schemas": {
-      "Accommodation": {
+      "Transportation-departure-category": {
         "required": [
-          "id",
-          "name"
+          "id"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
+          "shortname": {
+            "type": "string"
+          },
           "name": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
-          },
-          "social": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "facebookUrl": {
-                "type": "string"
-              },
-              "twitterUrl": {
-                "type": "string"
-              },
-              "instagramaccount": {
-                "type": "string"
-              }
-            }
-          },
-          "telephone": {
+          "parent": {
             "type": "array",
             "items": {
-              "type": "object",
               "required": [
                 "id"
               ],
               "properties": {
                 "id": {
+                  "type": "string"
+                },
+                "shortname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "parent": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "children": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "children": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "shortname": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "parent": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "children": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "localizations": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "locale": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
               }
@@ -567,24 +643,29 @@
             "type": "array",
             "items": {
               "required": [
-                "id",
-                "name"
+                "id"
               ],
               "properties": {
                 "id": {
                   "type": "string"
                 },
+                "shortname": {
+                  "type": "string"
+                },
                 "name": {
                   "type": "string"
                 },
-                "description": {
-                  "type": "string"
+                "parent": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
-                "social": {
-                  "type": "component"
-                },
-                "telephone": {
-                  "type": "component"
+                "children": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "localizations": {
                   "type": "array",
@@ -616,49 +697,24 @@
           }
         }
       },
-      "NewAccommodation": {
-        "required": [
-          "name"
-        ],
+      "NewTransportation-departure-category": {
         "properties": {
+          "shortname": {
+            "type": "string"
+          },
           "name": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
-          },
-          "social": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "facebookUrl": {
-                "type": "string"
-              },
-              "twitterUrl": {
-                "type": "string"
-              },
-              "instagramaccount": {
-                "type": "string"
-              }
-            }
-          },
-          "telephone": {
+          "parent": {
             "type": "array",
             "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                }
-              }
+              "type": "string"
+            }
+          },
+          "children": {
+            "type": "array",
+            "items": {
+              "type": "string"
             }
           },
           "localizations": {
@@ -684,9 +740,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Accommodation"
-    }
-  ]
+  "tags": []
 }

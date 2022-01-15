@@ -117,10 +117,41 @@
       "repeatable": false,
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
       "component": "general.prices-buses"
+    },
+    "type": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "enumeration",
+      "enum": [
+        "BUS_FIRST_CLASS",
+        "BUS_SECOND_CLASS",
+        "BUS_THIRD_CLASS",
+        "BUS_CHARTERED",
+        "BUS_PUBLIC",
+        "COLLECTIVO_PUBLIC",
+        "COLLECTIVO_AIRPORT",
+        "TRAIN"
+      ],
+      "required": true,
+      "default": "BUS_SECOND_CLASS"
+    },
+    "departure_days": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "component": "general.departure-days",
+      "required": true
     }
   }
 }

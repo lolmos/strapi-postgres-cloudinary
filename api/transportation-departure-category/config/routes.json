@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/transportation-departure-categories",
+      "handler": "transportation-departure-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transportation-departure-categories/count",
+      "handler": "transportation-departure-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transportation-departure-categories/:id",
+      "handler": "transportation-departure-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transportation-departure-categories",
+      "handler": "transportation-departure-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transportation-departure-categories/:id",
+      "handler": "transportation-departure-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/transportation-departure-categories/:id",
+      "handler": "transportation-departure-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
