@@ -262,7 +262,7 @@
     "/accommodation-categories/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of accommodation-categories documents",
+        "description": "Retrieve the number of accommodation-categories documents",
         "responses": {
           "200": {
             "description": "Retrieve accommodation-categories document(s)",

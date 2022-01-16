@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/01/2021 12:06:14 PM"
+    "x-generation-date": "01/15/2022 1:53:54 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -307,7 +307,7 @@
     "/accommodation-categories/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of accommodation-categories documents",
+        "description": "Retrieve the number of accommodation-categories documents",
         "responses": {
           "200": {
             "description": "Retrieve accommodation-categories document(s)",
@@ -3226,7 +3226,7 @@
     "/holbox-chiquila-departures/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of holbox-chiquila-departures documents",
+        "description": "Retrieve the number of holbox-chiquila-departures documents",
         "responses": {
           "200": {
             "description": "Retrieve holbox-chiquila-departures document(s)",

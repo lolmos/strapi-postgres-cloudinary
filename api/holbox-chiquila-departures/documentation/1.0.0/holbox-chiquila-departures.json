@@ -262,7 +262,7 @@
     "/holbox-chiquila-departures/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of holbox-chiquila-departures documents",
+        "description": "Retrieve the number of holbox-chiquila-departures documents",
         "responses": {
           "200": {
             "description": "Retrieve holbox-chiquila-departures document(s)",
