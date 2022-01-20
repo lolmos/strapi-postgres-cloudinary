@@ -11,6 +11,7 @@
   },
   "devDependencies": {},
   "dependencies": {
+    "@strapi/provider-email-sendgrid": "^4.0.5",
     "@strapi/provider-email-sendmail": "^4.0.5",
     "knex": "<0.20.0",
     "pg": "^8.3.3",
