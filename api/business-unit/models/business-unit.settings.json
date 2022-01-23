@@ -136,7 +136,7 @@
       "enum": [
         "HOTEL",
         "VACATIONRENTAL",
-        "BAR",
+        "FOOD_AND_DRINK",
         "SHOPPING",
         "MEDICALSERVICES",
         "RENTALS",

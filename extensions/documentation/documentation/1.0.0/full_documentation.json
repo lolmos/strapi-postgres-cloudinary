@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "01/15/2022 1:53:54 PM"
+    "x-generation-date": "01/23/2022 9:25:12 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -10990,7 +10990,7 @@
             "enum": [
               "HOTEL",
               "VACATIONRENTAL",
-              "BAR",
+              "FOOD_AND_DRINK",
               "SHOPPING",
               "MEDICALSERVICES",
               "RENTALS",
@@ -11050,7 +11050,7 @@
                   "enum": [
                     "HOTEL",
                     "VACATIONRENTAL",
-                    "BAR",
+                    "FOOD_AND_DRINK",
                     "SHOPPING",
                     "MEDICALSERVICES",
                     "RENTALS",
@@ -11217,7 +11217,7 @@
             "enum": [
               "HOTEL",
               "VACATIONRENTAL",
-              "BAR",
+              "FOOD_AND_DRINK",
               "SHOPPING",
               "MEDICALSERVICES",
               "RENTALS",
@@ -11947,7 +11947,7 @@
                 "enum": [
                   "HOTEL",
                   "VACATIONRENTAL",
-                  "BAR",
+                  "FOOD_AND_DRINK",
                   "SHOPPING",
                   "MEDICALSERVICES",
                   "RENTALS",
