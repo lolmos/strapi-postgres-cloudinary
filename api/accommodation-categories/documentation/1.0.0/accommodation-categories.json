@@ -773,6 +773,10 @@
                 },
                 "ext": {
                   "type": "string"
+                },
+                "isPrimary": {
+                  "type": "boolean",
+                  "default": false
                 }
               }
             }
@@ -1240,6 +1244,10 @@
                 },
                 "ext": {
                   "type": "string"
+                },
+                "isPrimary": {
+                  "type": "boolean",
+                  "default": false
                 }
               }
             }

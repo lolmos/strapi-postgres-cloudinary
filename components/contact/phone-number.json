@@ -22,6 +22,11 @@
     },
     "ext": {
       "type": "string"
+    },
+    "isPrimary": {
+      "type": "boolean",
+      "default": false,
+      "unique": true
     }
   }
 }
